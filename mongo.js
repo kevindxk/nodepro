@@ -1,29 +1,29 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://192.168.41.128:27017/userInfo')
-
-
-
-//定义一个schema
-
-var userSchema = mongoose.Schema({
-    name:String,
-    age:Number,
-    status:Number
-})
+// mongoose.connect('mongodb://192.168.41.128:27017/userInfo')
 
 
-var User = mongoose.model('User',userSchema,'user');
 
-//查找数据
-User.find({},(err,doc)=>{
-    if (err){
-        console.log(err);
+// //定义一个schema
 
-    }else{
-        console.log(doc)
-    }
-})
+// var userSchema = mongoose.Schema({
+//     name:String,
+//     age:Number,
+//     status:Number
+// })
+
+
+// var User = mongoose.model('User',userSchema,'user');
+
+// //查找数据
+// User.find({},(err,doc)=>{
+//     if (err){
+//         console.log(err);
+
+//     }else{
+//         console.log(doc)
+//     }
+// })
 
 
 //增加数据
