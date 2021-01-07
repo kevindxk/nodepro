@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 // var UserModel=require("./model/user.js");
 const userRouter = require("./router/userRouter")
 
-const routes = require('./router');
+// const routes = require('./router');
 
 
 

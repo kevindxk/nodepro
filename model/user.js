@@ -2,12 +2,10 @@ var mongoose = require(".././model/db.js");
 
 
 var userSchema =mongoose.Schema({
-    name:String,
-    age:Number,
-    stats:{
-         type:Number,
-         default:1    
-        }
+
+    username:String,
+    password :String,
+    phone :Number
 })
 
 var UserModel =mongoose.model("User",userSchema);
